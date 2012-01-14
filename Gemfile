@@ -7,7 +7,8 @@ gem 'rails', '3.1.3'
 
 gem 'json'
 
-gem 'pg'
+gem 'execjs'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -28,6 +29,8 @@ group :test do
 end
 
 group :production do
+  gem 'therubyracer','~>0.9.3.beta1'
+  gem 'pg'
 end
 gem 'jquery-rails'
 
